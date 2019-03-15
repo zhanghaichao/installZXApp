@@ -46,7 +46,7 @@
             var appUrl = "http://cdn-ty.tthw.cc/download/sgame-qmhy-76000-20190313123641.apk";
             if (!isPC && !iswx) {
                 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                    
+                    location.href = "itms-services:///?action=download-manifest&url=https://zxfsz.netlify.com/mainfest.plist";
                 }else{
                     if(appUrl){
                         location.href = appUrl;
