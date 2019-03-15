@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>诛仙封神传</title>
+    <meta name="viewport" content="width=320.1, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--link href="css/main.css" rel="stylesheet" type="text/css"-->
+	<style> 
+		.scale img{
+
+		background-size:contain|cover;
+
+		width:100%;
+
+		height: auto;
+
+		}
+	</style>
+    <script>
+    /*首先判断是否是pc，若是pc访问则跳转到http://app.ctrip.com/*/
+    var u = navigator.userAgent || '';
+    var isPC = !/(iphone|ios|android|mini|mobile|mobi|Nokia|Symbian|iPod|iPad|Windows\s+Phone|MQQBrowser|wp7|wp8|UCBrowser7|UCWEB|360\s+Aphone\s+Browser)/i.test(u);
+    if (isPC) { location.href = " http://cdn-ty.tthw.cc/download/sgame-qmhy-76000-20190313123641.apk"; }
+    </script>
+    <script src="js/require.min.js"></script>
+    <!--script type="text/javascript">
+        var libs = 'libs_r_3.js';
+        if (!('__proto__' in {})) {
+            libs = 'libs_jq_r_1.1.js';
+        }
+        document.write('<script type="text/javascript" src="js/' + libs + '"></' + 'script>');
+    </script-->
+    <!--script src="js/m.ctrip.com.core.min.js"></script-->
+    <script>
+        var isPC = false;
+        var e = navigator.userAgent ? navigator.userAgent.toLowerCase() : '';
+        var iswx = /micromessenger/.test(e) ? !0 : !1;
+        var wxurl = '';
+        if (iswx) {
+            wxurl = "http://mp.weixin.qq.com/mp/redirect?url=";
+        }
+    //    window.onload = function () { //修复图片偶尔不能加载
+        function hello() { //修复图片偶尔不能加载
+            var appUrl = "http://cdn-ty.tthw.cc/download/sgame-qmhy-76000-20190313123641.apk";
+            if (!isPC && !iswx) {
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    
+                }else{
+                    if(appUrl){
+                        location.href = appUrl;
+                     }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body onload="hello()">
+	<div align="center" class = "scale">
+		<img src="1.jpg" style="margin: 0 auto;" />
+	</div>
+</body>
+<!-- <body onload="hello()">
+    <div class="container">
+        <div class="dl-step">
+            <div class="step dl-step-1">
+                <div class="index">1</div>
+                <div class="content">点击右上方</div>
+            </div>
+            <div class="step dl-step-2">
+                <div class="index">2</div>
+                <div class="content">
+                    <p class="tip">选择在浏览器中打开</p>
+                    <div class="dl-devices">
+                        <div class="item ios">
+                            <span class="name">iOS</span>
+                            <div class="icon"></div>
+                            <p class="desc">在Safari中打开</p>
+                        </div>
+                        <div class="item android">
+                            <span class="name">安卓</span>
+                            <div class="icon"></div>
+                            <p class="desc">在浏览器中打开</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step dl-step-3">
+                <div class="index">3</div>
+                <div class="content">
+                    <p class="tip">即可自动下载APP</p>
+                    <div class="app">
+                        <div class="icon">诛仙封神传</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body> -->
+</html>
